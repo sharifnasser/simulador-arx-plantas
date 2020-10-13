@@ -205,7 +205,7 @@ gui.protocol("WM_DELETE_WINDOW", close_window)
 
 # Create Widgets
 modo_simulacion = tk.StringVar() 
-tk.Label(gui, text="Modo de Operacion").pack(anchor="w")
+tk.Label(gui, text="Modo de Simulacion").pack(anchor="w")
 tk.Radiobutton(gui, text='Primer Orden', variable=modo_simulacion, value="Primer Orden", command=usePrimerOrden).pack(anchor="w")
 tk.Radiobutton(gui, text='Filtro ARX', variable=modo_simulacion, value="Filtro ARX", command=useARX).pack(anchor="w")
 print(modo_simulacion)
